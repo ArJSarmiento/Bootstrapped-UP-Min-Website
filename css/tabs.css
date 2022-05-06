@@ -1,0 +1,81 @@
+/* styles for home page and tabs */
+.tab, #tabs{
+    background: transparent !important;
+    border: none !important;
+}
+
+.tab li{
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    border: none !important;
+}
+
+#tabs .ui-state-active  a{
+    color: var(--color-2) !important;
+}
+
+.tab li a{
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(12px, 3vw, 16px);
+    line-height: 24px;
+
+    letter-spacing: 0.1px;
+    color: var(--main-color-text) !important;
+}
+
+#home{
+    padding: 1vw 5vw;
+}
+
+.info{
+    color: var(--main-color-text);
+}
+
+.info img{
+    float: right;
+}
+.info h1{
+    font-weight: 700;
+    font-size: clamp(20px, 5vw, 58px);
+
+    letter-spacing: 0.2px;
+    margin :0;
+}
+
+.info img{
+    width: 30vw;
+    margin: 15px;
+}
+
+.info p, .info h3{
+    color: var(--grey-text);
+}
+
+.info p
+{
+    text-align: revert;
+    font-weight: 400;
+    font-size: clamp(12px, 3vw, 16px);
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+.vandm{
+    text-align:justify;
+}
+
+.contacts p, .contacts h3{
+    text-align: left;
+    margin: 0 !important;
+    line-height: 30px;
+}
+
+.contacts h1{
+    margin-bottom: 5vh;
+}
+
+.contacts img{
+    width: 40vw;
+}
