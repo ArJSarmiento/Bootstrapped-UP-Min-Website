@@ -9,6 +9,7 @@
     font-size: clamp(12px, 3vw, 15px);
     color: var(--main-color-text) !important;
     max-width: 40vw;
+    padding: 10px;
 }
 
 .nav-tabs .active{
@@ -17,9 +18,13 @@
     outline: none !important;
 }
 
-.info{
+.info, .tabs{
     color: var(--main-color-text);
-    padding:0px 10vw;
+    padding:0px 5vw;
+}
+
+.tabs{
+    border: none !important;
 }
 
 .info h1{

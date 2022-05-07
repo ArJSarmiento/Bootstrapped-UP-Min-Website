@@ -65,7 +65,7 @@ input:focus {
     box-shadow: 0 2px 6px -8px var(--color-2);
 }
 
-button {
+.form button {
     background-color: #fff;
     width: 100px;
     /* padding: -6px; */
@@ -83,8 +83,8 @@ button {
     margin: 20px 0px;
 }
 
-button:hover,
-button:focus {
+.form button:hover,
+.form button:focus {
     background-color: var(--color-2);
     color: #fff;
 }
@@ -101,7 +101,8 @@ button:focus {
 }
 
 .gender input, .gender label{
-    max-width:200px !important;
+    max-width:150px !important;
+    padding: 5px 0px;
 }
 
 .gender .ui-state-active, .gender .ui-state-active, .ui-button:active{
@@ -120,5 +121,12 @@ button:focus {
     .grid-div3,
     .grid-div2 {
         grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    .gender input, .gender label{
+        max-width: 35vw !important;
+        padding: 5px 0px;
     }
 }

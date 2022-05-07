@@ -66,3 +66,10 @@ header nav h2{
 .link:hover{
     color: var(--color-2);
 }
+
+header button:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-color: white;
+    outline-style: auto;
+    outline-width: 5px;
+}
