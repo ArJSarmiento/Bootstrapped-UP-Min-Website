@@ -65,7 +65,7 @@ input:focus {
     box-shadow: 0 2px 6px -8px var(--color-2);
 }
 
-.form button {
+#submitBtn {
     background-color: #fff;
     width: 100px;
     /* padding: -6px; */
@@ -83,8 +83,8 @@ input:focus {
     margin: 20px 0px;
 }
 
-.form button:hover,
-.form button:focus {
+#submitBtn:hover,
+#submitBtn:focus {
     background-color: var(--color-2);
     color: #fff;
 }
