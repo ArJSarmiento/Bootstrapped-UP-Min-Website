@@ -1,52 +1,38 @@
 /* styles for home page and tabs */
-.tab, #tabs{
+
+.nav-tabs button{
     background: transparent !important;
     border: none !important;
-}
-
-.tab li{
-    margin: 0;
-    padding: 0;
-    background: transparent !important;
-    border: none !important;
-}
-
-#tabs .ui-state-active  a{
-    color: var(--color-2) !important;
-}
-
-.tab li a{
-    font-style: normal;
+    white-space: normal;
+    word-wrap: normal;
     font-weight: 700;
-    font-size: clamp(12px, 3vw, 16px);
-    line-height: 24px;
-
-    letter-spacing: 0.1px;
+    font-size: clamp(12px, 3vw, 15px);
     color: var(--main-color-text) !important;
+    max-width: 40vw;
+    padding: 10px;
 }
 
-#home{
-    padding: 1vw 5vw;
+.nav-tabs .active{
+    color: var(--color-2) !important;
+    border: none !important;
+    outline: none !important;
 }
 
-.info{
+.info, .tabs{
     color: var(--main-color-text);
+    padding:0px 5vw;
 }
 
-.info img{
-    float: right;
+.tabs{
+    border: none !important;
 }
+
 .info h1{
     font-weight: 700;
     font-size: clamp(20px, 5vw, 58px);
 
     letter-spacing: 0.2px;
     margin :0;
-}
-
-.info img{
-    width: 30vw;
-    margin: 15px;
 }
 
 .info p, .info h3{
@@ -78,4 +64,22 @@
 
 .contacts img{
     width: 40vw;
+} 
+
+.nav-tabs{
+    border:none !important;
+}
+
+.info img{
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (min-width: 700px) {
+    .info img{
+        float: right ;
+        width: 30vw;
+        margin: 15px;
+    }
 }
