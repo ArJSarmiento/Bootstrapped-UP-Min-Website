@@ -1,73 +1,48 @@
 <!-- HTML File for academic unit College of Humanities and Social Science (CHSS) -->
+<!-- Applied boostraps for most html elements -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- jquery stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
     <!-- custom stylesheets -->
     <link rel="stylesheet" href="./css/header.css" type="text/css" />
-    <link rel="stylesheet" href="./css/tabs.css" />
     <link rel="stylesheet" href="./css/acad_units_dropdown.css" />
 
     <!-- jquery scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-    <!-- custom scripts -->
-    <script src="./js/acad_units_dropdown.js"></script>
 
     <title>College of Humanities and Social Science</title>
     <link rel="icon" href="./static/img/icon.png" type="image/png" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand w-50 text-white" href="./index.html">
-            <img
-              src="./static/img/logo.png"
-              style="max-width: clamp(50px, 7vw, 100px)"
-              class="d-inline-block"
-              alt=""
-            />
-            <div class="d-inline-block">UP Mindanao</div>
-          </a>
+        <!-- ================ Nav Bar ================= -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand w-50 text-white" href="./index.html">
+                    <img src="./static/img/logo.png" style="max-width: clamp(50px, 7vw, 100px)" class="d-inline-block" alt="" />
+                    <div class="d-inline-block">UP Mindanao</div>
+                </a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a
                 >
               </li>
               <li class="nav-item dropdown">
@@ -81,13 +56,9 @@
                 >
                   Academic Units
                 </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="./chss.html"
-                      >College of Humanities and Social Science</a
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="./chss.html">College of Humanities and Social Science</a
                     >
                   </li>
                   <li>
@@ -112,48 +83,35 @@
                   Sign-up
                   <img src="./static/svg/arrow.svg" />
                 </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                                </li>
+                            </ul>
+                </div>
+            </div>
+        </nav>
+
     </header>
     <div class="spacer layer1"></div>
-    <div class="gradient-background-chss"></div>
-    <main>
-      <!-- Content/Information for academic unit -->
-      <section id="home">
-        <div class="acad_unit">
-          <div class="hss" id="hss">
-            <article class="art-hss">
-              <span class="college_logo"
-                ><img src="./static/img/CHSS.png"
-              /></span>
-              <h1>College of Humanities and Social Science</h1>
-              <p class="acad-u-basic-inf">
-                In 1997, UP Mindanao’s former College of Arts and Science (CAS)
-                was broken down into other colleges. Thus, the College of
-                Humanities and Social Science was formed. The College of
-                Humanities and Social Sciences’ (CHSS) signature focus on
-                experiential learning with the rigorous study of society,
-                culture, politics, and ethics. It also equips students with the
-                marketable skills necessary to excel in the job market or
-                continue on to graduate and professional studies. This college
-                serves every student, regardless of major, by supporting core
-                curriculum components, creating opportunities for interactive
-                education, and encouraging community engagement through
-                co-curricular initiatives.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
+    <div class="gradient-background chss">
+        <main>
+            <!-- Content/Information for academic unit -->
+            <section id="home">
+                <div class="acad_unit">
+                    <article class="mt-5">
+                        <span><img src="./static/img/CHSS.png " class="mx-auto d-block college_logo mb-3"/></span>
+                        <h2 class="text-center mb-3 px-5">College of Humanities and Social Science</h2>
+                        <p class="text-justify px-5 font-weight-normal">
+                            In 1997, UP Mindanao’s former College of Arts and Science (CAS) was broken down into other colleges. Thus, the College of Humanities and Social Science was formed. The College of Humanities and Social Sciences’ (CHSS) signature focus on experiential learning
+                            with the rigorous study of society, culture, politics, and ethics. It also equips students with the marketable skills necessary to excel in the job market or continue on to graduate and professional studies. This college serves
+                            every student, regardless of major, by supporting core curriculum components, creating opportunities for interactive education, and encouraging community engagement through co-curricular initiatives.
+                        </p>
+                    </article>
+                </div>
+    </div>
+
+    </section>
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+</body>
+
 </html>

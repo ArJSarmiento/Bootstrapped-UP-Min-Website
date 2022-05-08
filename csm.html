@@ -1,72 +1,47 @@
+<!-- HTML File for academic unit College of Science and Mathematics (CSM) -->
+<!-- Applied boostraps for most html elements -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- jquery stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
     <!-- custom stylesheets -->
     <link rel="stylesheet" href="./css/header.css" type="text/css" />
-    <link rel="stylesheet" href="./css/tabs.css" />
     <link rel="stylesheet" href="./css/acad_units_dropdown.css" />
 
     <!-- jquery scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-    <!-- custom scripts -->
-    <script src="./js/acad_units_dropdown.js"></script>
-
     <title>College of Science and Mathematics</title>
     <link rel="icon" href="./static/img/icon.png" type="image/png" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand w-50 text-white" href="./index.html">
-            <img
-              src="./static/img/logo.png"
-              style="max-width: clamp(50px, 7vw, 100px)"
-              class="d-inline-block"
-              alt=""
-            />
-            <div class="d-inline-block">UP Mindanao</div>
-          </a>
+        <!-- ================ Nav Bar ================= -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand w-50 text-white" href="./index.html">
+                    <img src="./static/img/logo.png" style="max-width: clamp(50px, 7vw, 100px)" class="d-inline-block" alt="" />
+                    <div class="d-inline-block">UP Mindanao</div>
+                </a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a
                 >
               </li>
               <li class="nav-item dropdown">
@@ -80,13 +55,9 @@
                 >
                   Academic Units
                 </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="./chss.html"
-                      >College of Humanities and Social Science</a
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="./chss.html">College of Humanities and Social Science</a
                     >
                   </li>
                   <li>
@@ -111,45 +82,34 @@
                   Sign-up
                   <img src="./static/svg/arrow.svg" />
                 </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                                </li>
+                            </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <div class="spacer layer1"></div>
-    <div class="gradient-background-csm"></div>
-    <main>
-      <!-- Content/Information for academic unit -->
-      <section id="home">
-        <div class="acad_unit">
-          <div class="csm" id="csm">
-            <article class="art-csm">
-              <span class="college_logo"
-                ><img src="./static/img/CSM.png"
-              /></span>
-              <h1>College of Science and Mathematics</h1>
-              <p class="acad-u-basic-inf">
-                Along with the CHSS, the College of Science and Mathematics was
-                also formed in 1997 after the College of Arts and Science (CAS)
-                was split into different colleges. The College of Science and
-                Mathematics pursues the development of well-rounded persons
-                through a culture of excellence in the science and for the
-                establishment of a just and humane society. The College aims to
-                be an internationally-recognized National Centers in Science and
-                Mathematics by producing quality graduates and outstanding
-                research studies that lead in innovation and discovery.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
+    <div class="gradient-background csm">
+        <main>
+            <!-- Content/Information for academic unit -->
+            <section id="home">
+                <div class="acad_unit">
+                    <article class="mt-5">
+                        <span><img src="./static/img/CSM.png" class="mx-auto d-block college_logo mb-3"/></span>
+                        <h2 class="text-center mb-3 px-5">College of Science and Mathematics</h2>
+                        <p class="text-justify px-5 font-weight-normal">
+                            Along with the CHSS, the College of Science and Mathematics was also formed in 1997 after the College of Arts and Science (CAS) was split into different colleges. The College of Science and Mathematics pursues the development of well-rounded persons through
+                            a culture of excellence in the science and for the establishment of a just and humane society. The College aims to be an internationally-recognized National Centers in Science and Mathematics by producing quality graduates
+                            and outstanding research studies that lead in innovation and discovery.
+                        </p>
+                    </article>
+                </div>
+    </div>
+    </div>
+    </section>
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
 </html>
